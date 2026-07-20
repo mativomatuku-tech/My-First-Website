@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FUNNYJAC CREATIONS | Official Hub</title>
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #0d0e12;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    /* Header & Navigation */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background-color: #16181f;
+      border-bottom: 2px solid #00f2fe;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      color: #00f2fe;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: #b0b3b8;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00f2fe;
+    }
+
+    /* Hero Banner */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(180deg, #16181f 0%, #0d0e12 100%);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: #00f2fe;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #a0a5b5;
+      max-width: 650px;
+      margin: 0 auto 25px auto;
+    }
+
+    /* Sections Container */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      color: #ffffff;
+      margin-bottom: 30px;
+      text-align: center;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #00f2fe;
+      margin: 8px auto 0 auto;
+      border-radius: 2px;
+    }
+
+    /* Cards Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-bottom: 60px;
+    }
+
+    .card {
+      background-color: #16181f;
+      border: 1px solid #242731;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #00f2fe;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: #a0a5b5;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    /* Beat Item Specific Styling */
+    .beat-item {
+      background: #0d0e12;
+      border: 1px solid #242731;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    /* Action Buttons */
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      font-size: 15px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-primary {
+      background-color: #00f2fe;
+      color: #0d0e12;
+    }
+
+    .btn-primary:hover {
+      background-color: #4facfe;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #00f2fe;
+      border: 2px solid #00f2fe;
+    }
+
+    .btn-outline:hover {
+      background: #00f2fe;
+      color: #0d0e12;
+      transform: translateY(-2px);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #16181f;
+      border-top: 1px solid #242731;
+      color: #707585;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header>
+    <div class="logo">FUNNYJAC CREATIONS</div>
+    <nav>
+      <a href="#beats">Beats</a>
+      <a href="#editing">Video Editing</a>
+      <a href="#classes">Classes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Hero -->
+  <section class="hero">
+    <h1>Welcome to <span>FUNNYJAC CREATIONS</span></h1>
+    <p>Music Production • Video Editing • Mentorship & Digital Media</p>
+    <a href="https://wa.me/254746608422?text=Hello%20FUNNYJAC%20CREATIONS!%20I%20am%20on%20your%20website%20and%20I%20would%20like%20to%20book%20a%20service." target="_blank" class="btn btn-primary">Reach Out / Book Service</a>
+  </section>
+
+  <!-- Main Sectors -->
+  <div class="container">
+    
+    <h2 class="section-title">Explore Services & Work</h2>
+
+    <div class="grid">
+      
+      <!-- Sector 1: Music Beats Store -->
+      <div class="card" id="beats">
+        <h3>🎵 Beat Store & Audio Showcase</h3>
+        <p style="margin-bottom: 20px;">Listen to exclusive instrumentals produced by FUNNYJAC. Inquire to purchase or license.</p>
+
+        <!-- Beat 1 -->
+        <div class="beat-item">
+          <h4 style="color: #00f2fe; margin-bottom: 10px;">🎵 Beat 1</h4>
+          <audio controls style="width: 100%;">
+            <source src="./audio/beat1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <div style="margin-top: 12px; text-align: right;">
+            <a href="https://wa.me/254746608422?text=Hello%20FUNNYJAC!%20I%20am%20interested%20in%20purchasing/licensing%20Beat%201." target="_blank" class="btn btn-primary" style="padding: 6px 14px; font-size: 13px;">Inquire / Buy Beat 1</a>
+          </div>
+        </div>
+
+        <!-- Beat 2 -->
+        <div class="beat-item">
+          <h4 style="color: #00f2fe; margin-bottom: 10px;">🎵 Beat 2</h4>
+          <audio controls style="width: 100%;">
+            <source src="./audio/beat2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <div style="margin-top: 12px; text-align: right;">
+            <a href="https://wa.me/254746608422?text=Hello%20FUNNYJAC!%20I%20am%20interested%20in%20purchasing/licensing%20Beat%202." target="_blank" class="btn btn-primary" style="padding: 6px 14px; font-size: 13px;">Inquire / Buy Beat 2</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sector 2: Video Editing Services -->
+      <div class="card" id="editing">
+        <h3>🎬 Video Editing Services</h3>
+        <p style="margin-bottom: 25px;">High-quality, dynamic video editing for creators, brands, and artists.</p>
+
+        <!-- Service Features Grid -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 25px; text-align: left; font-size: 14px;">
+          <div style="background: #0d0e12; padding: 10px; border-radius: 6px; border: 1px solid #242731;">
+            ⚡ <strong style="color: #00f2fe;">Short-Form & Reels</strong>
+            <p style="font-size: 12px; color: #a0a5b5; margin-top: 4px;">Viral captions, fast cuts & sound effects.</p>
+          </div>
+          <div style="background: #0d0e12; padding: 10px; border-radius: 6px; border: 1px solid #242731;">
+            🎥 <strong style="color: #00f2fe;">YouTube & Vlogs</strong>
+            <p style="font-size: 12px; color: #a0a5b5; margin-top: 4px;">Seamless pacing, intro hooks & background music.</p>
+          </div>
+          <div style="background: #0d0e12; padding: 10px; border-radius: 6px; border: 1px solid #242731;">
+            🎨 <strong style="color: #00f2fe;">Color Grading</strong>
+            <p style="font-size: 12px; color: #a0a5b5; margin-top: 4px;">Cinematic look & vibrant color passes.</p>
+          </div>
+          <div style="background: #0d0e12; padding: 10px; border-radius: 6px; border: 1px solid #242731;">
+            🎶 <strong style="color: #00f2fe;">Music Videos & Ads</strong>
+            <p style="font-size: 12px; color: #a0a5b5; margin-top: 4px;">Beat-synced transitions & visual fx.</p>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <a href="https://wa.me/254746608422?text=Hello%20FUNNYJAC!%20I%20have%20a%20Video%20Editing%20project%20and%20I%20would%20like%20to%20get%20a%20quote." target="_blank" class="btn btn-primary" style="width: 100%;">Book Video Editing / Get Quote</a>
+      </div>
+
+      <!-- Sector 3: Editing Classes -->
+      <div class="card" id="classes">
+        <h3>🎓 Video Editing Classes</h3>
+        <p>Learn professional video editing skills step-by-step. Practical tutorials and 1-on-1 coaching available.</p>
+        <a href="https://wa.me/254746608422?text=Hello%20FUNNYJAC!%20I%20want%20to%20register%20for%20your%20Video%20Editing%20Classes." target="_blank" class="btn btn-primary">Join Editing Class</a>
+      </div>
+
+    </div>
+
+    <!-- Contact Banner -->
+    <div class="card" id="contact" style="text-align: center; background: linear-gradient(135deg, #16181f, #1f2430);">
+      <h3>📩 Ready to Collaborate or Learn?</h3>
+      <p>Have a project in mind, need beats, or want to register for editing classes? Get in touch directly!</p>
+      <a href="https://wa.me/254746608422?text=Hello%20FUNNYJAC%20CREATIONS!%20I%20am%20on%20your%20website%20and%20I%20want%20to%20make%20an%20inquiry." target="_blank" class="btn btn-primary">Contact via WhatsApp</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 FUNNYJAC CREATIONS. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
